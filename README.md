@@ -33,7 +33,7 @@ The endpoints are hosted on heroku [ here ](https://movie-mania-20.herokuapp.com
   * copy .env.example and rename to .env and add the necessary credentials for each key.
   * Run ```npm test``` to fireup the tests
   * Run ```npm start``` to start the server
-  * Navigate to http://localhost:3100/api/v1/
+  * Navigate to http://localhost:3100
 
 ## Server project structure
   * Server bootstrapping available inside ```server/app.js```
