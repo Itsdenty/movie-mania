@@ -115,7 +115,7 @@ class Home extends Component {
                                 {search.Title}
                             </p>
                             <p className="product-price">
-                                ${search.Year}
+                                {search.Year}
                             </p>
                         </div>
                         <div className="app-card-overlay point-it" onClick={() => this.openModal(search.imdbID)}>
