@@ -1,8 +1,8 @@
-# turing-fullstack-challenge
+# movie-mania
 
-Turing challenge app is an e-commerce app built with react frontend and node and express backend
+movie-mania app challenge app is a sample movie-app built with react frontend and node and express backend
 
-The endpoints are hosted on heroku [ here ](https://turing-challenge-api.herokuapp.com/api/v1/).
+The endpoints are hosted on heroku [ here ](https://movie-mania-20.herokuapp.com/api/v1/).
 
 ## Made With
   ### UI
@@ -28,7 +28,7 @@ The endpoints are hosted on heroku [ here ](https://turing-challenge-api.herokua
 ## Installation.
   * Install [Nodejs](https://nodejs.org/en/download/)
   * Setup Redis server [Redis](https://redis.io/)
-  * Clone this repo ``` git clone https://github.com/Itsdenty/turing-fullstack-challenge.git ```
+  * Clone this repo ``` git clone https://github.com/Itsdenty/movie-mania.git ```
   * Run ```npm install``` to install the required dependencies
   * copy .env.example and rename to .env and add the necessary credentials for each key.
   * Run ```npm test``` to fireup the tests
@@ -52,7 +52,7 @@ The endpoints are hosted on heroku [ here ](https://turing-challenge-api.herokua
 * User can view the movie details by clicking on the view details button on the movie card overlay.
 
 ## Available APIs
-For details on available endpoints, check the **Documentation** out [ here ](https://github.com/Itsdenty/turing-fullstack-challenge).
+For details on available endpoints, check the **Documentation** out [ here ](https://movie-mania-20.herokuapp.com/api-docs/).
 
 ## License and Copyright
 &copy; Abd-afeez Abd-hamid
