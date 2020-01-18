@@ -1,0 +1,455 @@
+@import './_variables.scss';
+
+.category-banner {
+    background: url(../img/images/background.jpg);
+    height: 65vh;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    margin: 25px 0px;
+
+
+    @media screen and (max-width: $break-medium) {
+        height: 63vh;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        height: 62vh;
+    }
+
+    @media screen and (max-width: $break-small) {
+        height: 60vh;
+    }
+}
+
+.category-banner-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 120px;
+    color: $typo-white;
+
+    @media screen and (max-width: $break-large) {
+        height: 63vh;
+        padding: 0px 50px;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        height: 62vh;
+        padding: 0px 40px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        height: 60vh;
+        padding: 0px 30px;
+    }
+
+    h1 {
+        color: $typo-black;
+        font-family: $font-Play;
+        font-size: 3.3rem;
+        font-weight: 700;
+
+        @media screen and (max-width: $break-large) {
+            font-size: 2.4rem;
+        }
+
+        @media screen and (max-width: $break-medium) {
+            font-size: 2.2rem;
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 2rem;
+        } 
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    ul li a {
+        color: $typo-white;
+        font-family: $font-Mon;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: normal;
+
+        @media screen and (max-width: $break-large) {
+            font-size: 1.1rem;
+            width: 100%;
+            padding: 7px 0px; 
+        }
+
+        @media screen and (max-width: $break-medium) {
+            font-size: 1.05rem;
+            width: 100%;
+            padding: 5px 0px; 
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 1rem;
+            width: 100%;
+            padding: 3px 0px; 
+        }
+    }
+
+}
+
+
+.ui.button.login-btn {
+    width: $modal-btn-w;
+    background: $document-pink;
+    color: white;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    height: $modal-i-h;
+    border-radius: 30px;
+    font-weight: 900;
+}
+
+.modal-action-content {
+    padding: 20px 40px !important;
+}
+
+.modal-heading {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: $font-Mon;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.modal-close-icon {
+    font-size: 2.6rem;
+    float: right;
+    font-weight: 0;
+    margin-right: 12px;
+    margin-top: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.modal-input {
+    height: $modal-i-h;
+    text-align: center;
+}
+
+.modal-input::placeholder {
+    font-size: 1rem;
+    color: $typo-dark-grey;
+    font-weight: 600;
+}
+
+.modal-login-foot {
+    margin-top: 40px;
+
+    p {
+        display: inline-block;
+        color: $typo-pink;
+        font-size: 1.02rem;
+        font-weight: 500;
+    }
+
+    p:nth-child(2) {
+        float: right;
+    }
+}
+
+.modal-signup-foot {
+    margin-top: 40px;
+    text-align: center;
+
+    p {
+        display: inline-block;
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: $typo-dark-grey;
+    }
+
+    p:nth-child(2) {
+        color: $typo-pink;
+        margin-left: 10px;
+    }
+}
+
+.cart-details {
+    font-size: 1.3rem;
+    font-family: $font-Mon;
+    font-weight: 800;
+}
+
+#borderless {
+    border: none;
+
+    th {
+        background: $typo-white;
+        color: $typo-light-grey;
+        font-size: 1.1rem;
+        font-family: $font-Mon;
+    }
+
+    tr td {
+        border: none;
+    }
+
+    .cart-price {
+        font-weight: 600;
+        font-size: 1.7rem;
+        font-family: $font-Mon;
+    }
+    
+    .table-item {
+        width: 50%;
+    }
+
+    .item-size {
+        font-size: 1.3rem;
+        font-family: $font-Mon;
+        color: $typo-dark-grey;
+    }  
+}
+
+.qty-input-wrap {
+    display: flex;
+    align-items: center;
+
+    input, button {
+        height: 40px;
+        border: none;
+        outline: none;
+        text-align: center;
+
+        @media screen and (max-width: $break-small) {
+            height: 30px;
+        }
+    }
+
+    input {
+        width: 60px;
+        border: 0.5px solid $typo-light-grey;
+        border-radius: 20px;
+        font-size: 1.1rem;
+        margin: 0px 5px;
+
+        @media screen and (max-width: $break-small) {
+            height: 30px;
+            width: 50px;
+            font-size: 1rem;
+            border-radius: 15px;
+        }
+    }
+
+    button {
+        width: 40px;
+        border-radius: 50%;
+        text-align: center;
+
+        @media screen and (max-width: $break-small) {
+            width: 30px;
+            font-size: 1rem;
+            border-radius: 15px;
+        }
+    }
+
+    button svg {
+        font-size: 1rem;
+    }
+}
+
+.cart-item-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-wrap .cart-name-wrap {
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.cart-item-wrap .cart-rm-btn {
+    background: $typo-white;
+    width: 120px;
+    margin-left: -25px;
+    font-size: 0.8rem;
+    font-weight: normal;
+
+    i {
+        color: red;
+    }
+}
+
+.cart-item-wrap .cart-rm-btn:hover {
+    background: none;
+}
+
+.cart-name-wrap {
+    .name {
+        font-size: 1.1rem;
+        color: $typo-black;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    .desc {
+        color: $typo-light-grey;
+        font-weight: normal;
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+}
+
+.cart-modal-footer {
+    background: $document-light-grey;
+    padding: 20px 80px;
+
+    .button-wrap {
+        button {
+            width: 180px;
+            height: 50px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            font-family: $font-Mon;
+        }
+
+        .back {
+            background: $document-white;
+            color: $typo-pink;
+        }
+
+        .check {
+            background: $document-pink;
+            color: $typo-white;
+            float: right;
+        }
+    }
+}
+
+#single-item-card {
+    width: 100%;
+    margin: 20px 0px;
+
+    #content {
+        padding: 25px 70px;
+
+        img {
+            display: block;
+            height: 320px;
+            width: 280px;
+
+            @media screen and (max-width: $break-large) {
+                height: 250px;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: $break-medium) {
+                height: auto;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: $break-small) {
+                height: auto;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        h3 {
+            font-size: 2.1rem;
+            font-family: $font-Mon;
+
+            @media screen and (max-width: $break-large) {
+                font-size: 1.6rem;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+
+            @media screen and (max-width: $break-medium) {
+                font-size: 1.4rem;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+
+            @media screen and (max-width: $break-small) {
+                font-size: 1.3rem;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+        }
+
+        h4 {
+            color: $typo-pink;
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-family: $font-Mon;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: $break-large) {
+                font-size: 1.4rem;  
+                margin: 7px 0px;
+            }
+
+            @media screen and (max-width: $break-medium) {
+                font-size: 1.3rem;  
+                margin: 15px 0px;
+            }
+
+            @media screen and (max-width: $break-small) {
+                font-size: 1.2rem;  
+                margin: 15px 0px;
+            }
+        }
+
+        .add-to-cart {
+            width: 220px;
+            background: $document-pink;
+            color: $typo-white;
+            height: $modal-i-h;
+            margin-top: 40px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            font-family: $font-Mon;
+
+            @media screen and (max-width: $break-large) {
+                font-size: 1rem;
+                width: 170px;
+                margin-top: 20px;
+                height: 50px;
+            }
+
+            @media screen and (max-width: $break-medium) {
+                font-size: 1rem;
+                width: 170px;
+                margin-top: 30px;
+                height: 50px;
+            }
+
+            @media screen and (max-width: $break-small) {
+                font-size: 0.9rem;
+                width: 150px;
+                margin-top: 30px;
+                height: 45px;
+            }
+        }
+    }
+}
+
+.ui.sidebar  a, .ui.sidebar .item .icon {
+    text-align: left !important;
+    position: relative;
+}

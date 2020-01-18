@@ -1,0 +1,1006 @@
+@import './_variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Playfair+Display:400,700,900&display=swap');
+
+html {
+    font-size: 16px;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: $document-light-grey;
+}
+
+.app-wrapper {
+    height: auto;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.my-divider {
+    height:  3px;
+    background: $document-pink;
+    margin-bottom: 30px;
+}
+
+button {
+    font-family: $font-Play;
+}
+
+.nav {
+    height: auto;
+    width: 100%;
+    background: $document-pink;
+    padding: 20px 52px;
+    min-height: auto;
+    color: white;
+    font-family: $font-Mon;
+    margin-bottom: 200px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    border-radius: 0%;
+    box-shadow: none;
+
+    @media screen and (max-width: $break-xtra-large) {
+        padding: 20px 20px;   
+    }
+
+    @media screen and (max-width: $break-large) {
+        padding: 15px 20px;   
+    }
+
+    @media screen and (max-width: $break-medium) {
+        padding: 15px 15px;   
+    }
+
+    @media screen and (max-width: $break-small) {
+        padding: 15px 12px;   
+    }
+
+    .item {
+        display: inline-block;
+    }
+
+    i, svg {
+        display: inline-block;
+
+        @media screen and (max-width: $break-xtra-large) {
+            margin: 0px 3px;   
+        }
+    }
+
+    .right {
+        float: right;
+        .item {
+            margin: 0 5px;
+        }
+    }
+}
+  
+.nav-logo {
+    font-size: 1.4rem;
+    color: $typo-white;
+    font-family: $font-Mon;
+    letter-spacing: 7px;
+    margin: 0;
+
+    @media screen and (max-width: $break-small) {
+        font-size: 1.2rem;  
+        letter-spacing: 0px;
+    }
+}
+
+.nav-list {
+    display: inline-block;
+    
+    a {
+        color: $typo-white;
+        font-size: 1rem;
+        font-family: $font-Mon;
+        font-weight: 700;
+        margin: 0px 20px;
+
+        @media screen and (max-width: $break-xtra-large) {
+            font-size: 1rem;
+            margin: 0px 10px;
+        }
+
+        @media screen and (max-width: $break-large) {
+            display: none;
+        }
+
+    }
+
+}
+
+.small-nav {
+    padding: 15px 50px; 
+    background: $document-black;
+
+    @media screen and (max-width: $break-xtra-large) {
+        padding: 15px 15px;   
+    }
+
+    @media screen and (max-width: $break-large) {
+        padding: 10px 10px;   
+    }
+
+    @media screen and (max-width: $break-medium) {
+        padding: 10px 8px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        padding: 10px 8px;
+    }
+
+    .nav-list {
+        a {
+            color: $typo-white;
+            font-size: 0.9rem;
+            font-family: $font-Mon;
+            font-weight: 600;
+            margin: 0px 10px;
+        }
+    }
+
+    .nav-logo {
+        font-size: 1.3rem;
+        color: $typo-white;
+        font-family: $font-Mon;
+        letter-spacing: 6px;
+
+        @media screen and (max-width: $break-small) {
+            font-size: 1.1rem;  
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.mr40 {
+    margin-right: 50px;
+
+    @media screen and (max-width: $break-medium) {
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        margin-right: 5px;
+    }
+}
+
+.top-icon {
+    font-size: 1.5rem;
+    color: $typo-white;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 5px;
+
+    @media screen and (max-width: $break-xtra-large) {
+        font-size: 1.4rem;   
+    }
+
+    @media screen and (max-width: $break-medium) {
+        font-size: 1.4rem;
+    }
+
+}
+
+#right-items {
+    @media screen and (max-width: $break-small) {
+        width: 100%;
+    }
+}
+
+#right-items .item {
+    @media screen and (max-width: $break-small) {
+        padding: 0px 9px;
+    }
+}
+
+.sidebar-close-wrap {
+    padding: 20px 10px;
+}
+
+.sidebar-close-icon {
+    color: $typo-black;
+    font-size: 1.8rem;
+    float: right;
+    box-sizing: border-box;
+    margin-right: 15px;
+    margin-top: 0px;
+    cursor: pointer;
+    display: block;
+}
+
+.side-menu-trigger {
+    @media screen and (min-width: $break-large) {
+        display: none;
+    }
+}
+
+#nav2 {
+    margin-top: 80px;
+    background: $document-black;
+    padding: 0px 30px;
+    width: 100%;
+    font-family: $font-Mon;
+    z-index: 10;
+    border-radius: 0%;
+    box-shadow: none;
+    margin-bottom: 0;
+    
+    @media screen and (max-width: $break-xtra-large) {
+        margin-top: 80px;
+        padding: 0px 15px;   
+    }
+
+    @media screen and (max-width: $break-large) {
+        margin-top: 70px;
+        padding: 0px 25px;   
+    }
+
+    @media screen and (max-width: $break-medium) {
+        margin-top: 65px;
+        padding: 0px 15px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        margin-top: 65px;
+        padding: 0px 12px;
+    }
+}
+
+#nav2 .item {
+    color: $typo-white;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    @media screen and (max-width: $break-large) {
+        font-size: 0.85rem;
+        padding: 0px 5px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        font-size: 0.8rem;
+        padding: 0px 6px;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        font-size: 0.8rem;
+        padding: 0px 6px;
+    }
+}
+
+#nav2 .item.sm-hide {
+    @media screen and (max-width: $break-small) {
+        display: none;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        display: none;
+    }
+}
+
+#nav2 .item:first-child {
+    margin-right: 100px;
+
+    @media screen and (max-width: $break-large) {
+        margin-right: 45px;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        margin-right: 10px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        margin-right: 10px;
+    }
+}
+
+.search-wrap {
+    width: 100vw;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background: $document-black;
+
+
+    .search-container {
+        height: 90%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        position: relative;
+
+        .search-result {
+            margin-top: 10px;
+            background: $document-white;
+            padding: 20px 10px;
+            width: 100%;
+            overflow-y: scroll;
+
+            .search-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .name {
+                    font-size: 1.3rem;
+                    font-family: $font-Mon;
+                    font-weight: 700;
+                    padding: 0;
+                    margin: 2px 0px;
+
+                    @media screen and (max-width: $break-small) {
+                        font-size: 1rem;  
+                    }
+                }
+    
+                .price {
+                    padding: 0;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin: 3px 0px;
+
+                    @media screen and (max-width: $break-small) {
+                        font-size: 1rem;  
+                    }
+                }
+    
+                .ui.image {
+                    height: 100px;
+                    float: left;
+                    margin-right: 20px;
+                }
+    
+                .ui.button {
+                    color: $typo-white;
+                    background: $document-pink;
+
+                    @media screen and (max-width: $break-small) {
+                        font-size: 0.9rem;  
+                        width: 110px;
+                        height: 35px;
+                    }
+                }
+            }
+            
+        }
+
+        @media screen and (max-width: $break-medium) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: $break-small) {
+            width: 80%;
+        }
+
+        .search-input {
+            height: 60px;
+            width: 100%;
+            font-size: 1.5rem;
+
+            @media screen and (max-width: $break-medium) {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: $break-small) {
+                height: 50px;
+            }
+
+            ::placeholder {
+                font-size: 1.5rem;
+                color: $typo-black;
+
+                @media screen and (max-width: $break-medium) {
+                    font-size: 1.3rem; 
+                }
+
+                @media screen and (max-width: $break-small) {
+                    font-size: 1.1rem; 
+                }
+            }
+
+            i {
+                font-size: 1.4rem;
+                @media screen and (max-width: $break-small) {
+                    font-size: 1.2rem; 
+                }
+            }
+        }
+    }
+}
+
+#close-search {
+    width: 100%;
+
+    svg {
+        font-size: 3rem;
+        margin-left: 88%;
+        margin-top: 20px;
+        cursor: pointer;
+
+        @media screen and (max-width: $break-medium) {
+            font-size: 2.5rem;
+            margin-top: 15px;
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 2.2rem;
+            margin-top: 10px;
+        }
+    }
+}
+
+.item-pink {
+    color: $typo-pink;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cart-qty {
+    color: $document-light-grey;
+    background: $document-pink;
+    padding: 5px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 900;
+    margin-top: -15px;
+    margin-left: -5px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-banner {
+    background: url(../img/images/bg.jpg);
+    height: 77vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+
+    @media screen and (max-width: $break-xtra-large) {
+        height: 75vh;
+    }
+
+    @media screen and (max-width: $break-large) {
+        height: 70vh;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        height: 65vh;
+    }
+
+    @media screen and (max-width: $break-small) {
+        height: 60vh;
+    }
+}
+
+.home-banner-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 77vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 120px;
+    color: $typo-white;
+
+    @media screen and (max-width: $break-xtra-large) {
+        height: 75vh;
+        padding: 0px 40px;
+    }
+
+    @media screen and (max-width: $break-large) {
+        height: 70vh;
+        padding: 0px 30px;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        height: 65vh;
+        padding: 0px 20px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        height: 60vh;
+    }
+}
+
+.home-banner-overlay h1 {
+    font-size: 3.3rem;
+    font-family: $font-Play;
+
+    @media screen and (max-width: $break-large) {
+        font-size: 2.7rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    @media screen and (max-width: $break-small) {
+        font-size: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.home-banner-overlay p {
+    font-family: $font-Mon;
+    font-size: 1.05rem;
+    font-weight: 600;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+    @media screen and (max-width: $break-large) {
+        font-size: 1.01rem;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: $break-small) {
+        font-size: 1rem;
+    }
+}
+
+.home-overlay-btn {
+    width: 160px;
+    height: 50px;
+
+    @media screen and (max-width: $break-medium) {
+        height: 45px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        height: 40px;
+    }
+}
+
+#home-overlay-btn {
+    background: $document-pink;
+    border-radius: 25px;
+    color: $typo-white;
+    font-size: 1.12rem;
+
+    @media screen and (max-width: $break-medium) {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: $break-small) {
+        font-size: 1rem;
+    }
+}
+
+.feature-heading {
+    color: $typo-black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px !important;
+    font-family: $font-Mon;
+
+    @media screen and (max-width: $break-large) {
+        font-size: 1.35rem;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: $break-small) {
+        font-size: 1.2rem;
+    }
+
+}
+
+.app-card {
+    width: 100%;
+    background: $document-white;
+    height: 350px;
+    min-height: auto;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+    transition: all 1s ease-in-out;
+    position: relative;
+
+    .app-card-overlay {
+        display: none;
+        background: $document-white;
+        height: inherit;
+        min-height: auto;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        padding: 15px 15px;
+        text-align: center; 
+        transition: all 1s ease-in-out;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+
+    @media screen and (max-width: $break-large) {
+        height: 240px;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        height: 250px;
+    }
+
+    @media screen and (max-width: $break-small) {
+        height: 240px;
+    }
+
+    .content {
+        padding: 15px 15px;
+        text-align: center; 
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    .product-name {
+        font-family: $font-Mon;
+        font-size: 1.1rem;
+        margin-top: 20px;
+        font-weight: 600;
+
+        @media screen and (max-width: $break-large) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: $break-medium) {
+            font-size: 0.95rem;
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 0.9rem;
+        }
+    }
+
+    .product-price {
+        color: $typo-pink;
+        font-weight: 600;
+        font-size: 1.1rem;
+        font-family: $font-Mon;
+
+        @media screen and (max-width: $break-large) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: $break-medium) {
+            font-size: 0.95rem;
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 0.9rem;
+        }
+    }
+
+}
+
+.app-card:hover {
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+
+    .app-card-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            background: $document-pink;
+            color: $typo-white;
+            border-radius: 20px;
+            font-family: $font-Mon;
+        }
+    }
+}
+
+.app-footer {
+    height: 250px;
+    margin-top: 70px;
+    padding: 50px 100px;
+
+    
+    @media screen and (max-width: $break-xtra-large) {
+        height: auto;
+        padding: 50px 50px;
+    }
+
+    @media screen and (max-width: $break-large) {
+        height: auto;
+        padding: 50px 30px;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        height: auto;
+        padding: 50px 5px;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 50px;
+
+        @media screen and (max-width: $break-large) {
+            margin: 0 20px;
+        }
+
+        @media screen and (max-width: $break-medium) {
+            margin: 0 15px;
+        }
+
+        @media screen and (max-width: $break-small) {
+            margin: 0 5px;   
+        }
+
+    } 
+
+    .menu li a {
+        color: $typo-white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-family: $font-Mon;
+
+        @media screen and (max-width: $break-large) {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width: $break-medium) {
+            font-size: 1.1rem;
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 1rem;   
+        }
+    }
+
+    .social-menu {
+        text-align: center;
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .social-menu li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .social-menu li a {
+        color: $document-white;
+        font-size: 1.9rem;
+
+        @media screen and (max-width: $break-large) {
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: $break-large) {
+            font-size: 1.3rem;
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 1.2rem;   
+        }
+    }
+
+    .footer-text {
+        margin-top: 25px;
+        color: $document-black;
+        font-size: 1.05rem;
+        font-family: $font-Mon;
+        text-align: center;
+
+        @media screen and (max-width: $break-large) {
+            font-size: 0.98rem;
+        }
+
+        @media screen and (max-width: $break-small) {
+            font-size: 0.8rem;   
+        }
+    }
+
+}
+
+.app-footer-grey {
+    background: $document-dark-grey;
+
+    .menu li a {
+        color: $typo-white;
+    }
+
+    .social-menu li a {
+        color: $document-white;
+    }
+
+    .footer-text {
+        color: $document-black;
+    }
+}
+
+.app-footer-white {
+    background: $document-white;
+
+    .menu li a {
+        color: $typo-black;
+    }
+
+    .social-menu li a {
+        color: $typo-light-grey;
+    }
+
+    .footer-text {
+        color: $document-black;
+    }
+}
+
+.pagination-wrap {
+    margin-top: 40px;
+    text-align: center;
+
+    .ui.button {
+        background: $document-white;
+        color: $typo-pink;
+        width: 140px;
+        cursor: pointer;
+    }
+
+    .ui.button:last-child {
+        margin-left: 15px;
+    }
+}
+
+.error-text {
+    color: red;
+}
+.success-text {
+    color: green;
+}
+.info-text {
+    color: blue;
+}
+.add-to-cart{
+    background-color: $typo-pink !important;
+    color: $typo-white !important;
+    // margin-top: 5% !important;
+    margin:0 auto !important;
+    display:block !important;
+}
+.product-qty{
+    max-width: 100px;
+    margin: 10px;
+}
+.product-qty-m{
+    max-width: 50px;
+    margin: 10px;
+}
+.card-pad {
+  padding: 10px !important;
+}
+.dp-it-25 {
+    margin-top: 25px !important;
+}
+.dp-it-15 {
+    margin-top: 15px !important;
+}
+.dp-it-50 {
+    margin-top: 50px !important;
+}
+.bg-cl-pry{
+    background-color: $typo-pink !important;
+}
+.cl-pry {
+     color: $typo-white !important;
+}
+.cl-sec {
+    color: $typo-pink !important;
+}
+.close-m {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    margin: 3px !important;
+    position: relative !important;
+    top: 5px !important;
+    left: 90% !important;
+}
+.close-l {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    margin: 3px !important;
+    position: relative !important;
+    top: 5px !important;
+    left: 95% !important;
+}
+.mg-5 {
+    margin: 5px;
+}
+.point-it {
+    cursor: pointer !important;
+}
+.ml-15{
+    margin-left: 15px !important;
+}
+.mr-15{
+    margin-right: 15px !important;
+}
+.mr-5{
+    margin-right: 5px !important;
+}
+.fl-right {
+    float: right !important;
+}
+.fl-center {
+    margin: 0 auto !important;
+}
+.txt-center{
+    text-align: center;
+}
+.pd-5{
+    padding: 5px;
+}
+.pd-25{
+    padding: 25px;
+}
+.pd-15{
+    padding: 15px !important;
+}
+.pd-bt-25{
+    padding-bottom: 15px; 
+}
+.pl-15{
+    padding-left: 15px !important;
+}
+.mv-it-25{
+    position: relative;
+    top: 25px;
+}
+.lh{
+    line-height: 120px;
+}
+
+.item-thumbnail {
+    float: left !important; 
+    height:80px !important;
+    width:80px !important;
+    } 
+   
+   .containerBox {
+   width:300px;
+   height:60px;
+   padding:1px;
+   background-color:#303030;
+   }
+   h4{
+   margin:0px;
+   margin-top:3%;
+   margin-left:70px;
+   color:black;
+   }
