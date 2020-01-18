@@ -23,7 +23,7 @@ app.use(validator());
 
 // configure swagger-ui
 app.use('/api-docs', express.static(
-  path.join(__dirname, '../server/public/dist'),
+  path.join(__dirname, '../server/public'),
 ));
 
 // Priority serve any static files.
